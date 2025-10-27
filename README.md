@@ -1,5 +1,5 @@
 <h1><b>🎬 Cinema Ticket Booking System </b></h1>
-<h3><i><b>Project Report</b></i></h3>
+<h3><i><b>Project Report by Shivani(24/CSE/419) and Shivanshika Sahani(24/CSE/420)</b></i></h3>
 <h2><b>Abstract</b></h2><hr>
 The Cinema Ticket Booking System is a console-based C++ application designed to simulate the process of booking movie tickets. The system allows users to view seat availability, book tickets, and manage reservations efficiently. It demonstrates how object-oriented programming (OOP) concepts can be practically applied to develop a real-world system that involves data handling, modular design, and persistence using file operations.
 
@@ -84,70 +84,128 @@ The system is based on a modular design approach:
 
 This project effectively demonstrates several Object-Oriented Programming principles:
 
-Concept  	Implementation Description
-Class & Object	The Seats class encapsulates data and functions related to seat management.
-Encapsulation	Seat data (rows, columns, and seat status) is kept private and accessed via public member functions.
-Abstraction	Users interact only with simplified functions like bookSeat() and displaySeats(), hiding internal details.
-Inheritance	Different seat types (like Platinum, Gold, Silver) can be derived from a base class for future scalability.
-Polymorphism	Virtual functions can be used for displaying seat information differently in derived classes.
-Constructor & Destructor	Constructors initialize seat data; destructors ensure cleanup when objects go out of scope.
-File Handling (Persistence)	Data is saved and retrieved using file I/O to preserve booking details between sessions.
-Function Overloading / Overriding	Methods can be redefined for specific seat categories.
-Dynamic Binding	Achieved when virtual functions are called through base class pointers.
-8. Implementation Details
+<h3><b>1. Class</b></h3>
+
+A class acts as a blueprint that defines attributes and functions for real-world entities.
+In this project, several classes were used such as Seats, Movie, and Booking.
+
+The Seats class manages seat arrangement and booking status.
+
+The Movie class stores details like movie name, timing, and ticket price.
+
+The Booking class handles the process of selecting a movie, displaying seat availability, booking, and generating tickets.
+This modular structure allows clean separation of functionalities and reusability.
+
+<h3><b>2. Object</b></h3>
+
+Objects are instances of classes that carry their own data and perform actions.
+In the project, objects were created from classes like Seats and Booking to represent different shows or movies.
+For example, separate Seats objects were used for different screens or movies, each maintaining its own seat matrix and booking data. This allowed multiple shows to run independently without data overlap.
+
+<h3><b>3. Encapsulation</b></h3>
+
+Encapsulation bundles data and functions into a single unit and hides sensitive data from external access.
+In this project, attributes like the 2D seat matrix were declared private inside the Seats class.
+Public member functions such as bookSeat() and cancelSeat() were used to access and modify seat data safely.
+This prevented any direct manipulation of seat availability from outside the class, maintaining data consistency.
+
+<h3><b>4. Abstraction</b></h3>
+
+Abstraction hides internal implementation and only exposes essential operations to the user.
+The user interacts through simple menu-driven functions — like viewing available seats or booking tickets — without knowing the internal logic of file handling or seat management.
+For example, when the user selects a seat, the program internally checks its availability, updates the file, and refreshes the layout, but the user only sees a clean interface.
+
+<h3><b>5. Inheritance</b></h3>
+
+Inheritance allows a class to acquire properties and behaviors of another class.
+In this system, inheritance was used to extend base class functionality.
+For instance, a VIPSeats class can inherit from Seats to add premium pricing and better seat types while still using the existing booking and display logic.
+This demonstrates reusability and scalability — new seat categories or booking types can easily be added without rewriting the base logic.
+
+<h3><b>6. Polymorphism</b></h3>
+
+Polymorphism allows a function or method to behave differently based on the object that calls it.
+In this project, virtual functions were introduced where the base class defined a general interface, and derived classes overrode specific behaviors.
+For example, a function to display seat arrangements could show different seat layouts or pricing rules depending on whether it was called by a normal or VIP class.
+
+<h3><b>7. Constructor</b></h3>
+
+Constructors initialize class objects automatically, while destructors release resources when they are no longer needed.
+In this project:
+
+Constructors were used to initialize seat matrices to zero (empty seats) and to load data from .txt files when the program started.
+
+
+<h3><b>8. Data Hiding</b></h3>
+
+Data hiding ensures that crucial data members cannot be accessed or modified directly from outside the class.
+For example, seat availability and booking records were private and could only be modified using defined functions like updateSeat() or checkAvailability().
+This protected the data from unauthorized modification and kept the program secure and stable.
+
+<h3><b>9. Message Passing</b></h3>
+
+Objects communicate by calling each other’s functions, which is known as message passing.
+In the booking process, the Booking class interacts with the Seats class by calling its methods to check availability or mark seats as booked.
+Similarly, the Movie class communicates with Booking to provide movie details and pricing.
+This inter-object communication made the system interactive and cohesive.
+
+<h3><b>10. Modularity</b></h3>
+
+Modularity divides the program into independent components, each handling a specific task.
+In this system, each class was responsible for a distinct module — seat management, file handling, booking management, and movie details.
+This made the project more organized, easier to debug, and simpler to expand (for example, adding new features like payment integration or multiple screens).
+
+<h3><b>11. File Handling and Persistence</b></h3>
+
+Although not a core OOP concept, persistence through file handling is crucial for real-world applications.
+The program used text files (.txt) to store seat availability, booking records, and user details.
+Whenever a booking was made or canceled, the updated data was written back to the file.
+This ensured data persistence, meaning the booking details remained even after the program was closed and reopened.
+
+<h3><b>12. Dynamic Memory and User Interaction</b></h3>
+
+Dynamic user inputs were handled efficiently through function calls and menu-driven programming.
+The user could choose movies, select seats, or cancel bookings dynamically, and the classes handled these inputs at runtime.
+This use of dynamic behavior complements the principles of polymorphism and abstraction.<br>
+
+<h2><b>Implementation Details</b></h2><hr>
 
 Seat Representation: A 2D array (Seat[rows][cols]) represents seat positions.
 
-File Operations:
+*File Operations*-
 
-Input: Load seat data from movie1_1.txt.
+**Input:** Load seat data from text file (e.g movie1_1.txt for booking tickets for 1st show of 1st movie in the menu).
 
-Output: Update file after each booking.
+**Output:** Update file after each booking.
 
-Menu System: Allows users to view and book seats interactively.
+**Menu System:** Allows users to view and book seats interactively.
 
-Error Control: Prevents double booking and invalid seat selections.
+**Error Control:** Prevents double booking and invalid seat selections.<br>
 
-9. Sample Output
-Welcome to Cinema Ticket Booking System
+<h2><b>Future Enhancements</b></h2><hr>
 
-1. View Seats
-2. Book a Seat
-3. Exit
+🔸Add user authentication (admin and customer).
 
-Enter your choice: 1
+🔸Include multiple movies and showtimes.
 
-Current Seat Status:
-O - Available   X - Booked
+🔸Implement price calculation and digital receipts.
 
-Row 1: O O X O O O O O X O
-Row 2: X O O O X O O X O O
+🔸Develop a graphical or web interface for better usability.
 
-10. Conclusion
+<h2><b>Conclusion</b></h2><hr>
 
 The Cinema Ticket Booking System demonstrates how Object-Oriented Programming can be applied to solve real-world problems through modular, scalable, and maintainable code.
 The project successfully integrates file handling for persistence, reinforcing practical concepts of data storage and retrieval.
 
 It not only enhances understanding of C++ OOP principles but also provides a solid foundation for extending the system to a multi-screen, multi-user, or GUI-based version.
 
-11. Future Enhancements
+<h2><b>References</b></h2><hr>
 
-Add user authentication (admin and customer).
+🔸E. Balagurusamy — Object-Oriented Programming with C++
 
-Include multiple movies and showtimes.
+🔸cppreference.com
 
-Implement price calculation and digital receipts.
+🔸GeeksforGeeks C++ Tutorials
 
-Develop a graphical or web interface for better usability.
+🔸cplusplus.com Documentation
 
-12. References
-
-E. Balagurusamy — Object-Oriented Programming with C++
-
-cppreference.com
-
-GeeksforGeeks C++ Tutorials
-
-cplusplus.com Documentation
-
-Would you like me to now format this version with professional Markdown + some minimal CSS-style HTML (fonts, color headings) so you can paste it directly into your GitHub README.md and it looks visually appealing too?
