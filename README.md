@@ -1,7 +1,7 @@
 <h1><b>🎬 Cinema Ticket Booking System</b></h1>
 
-**Language:** C++
-**Project Type:** Object-Oriented Programming (OOP)
+**Language:** C++<br>
+**Project Type:** Object-Oriented Programming (OOP)<br>
 **Author:** Shivani (24/CSE/419) and Shivanshika Sahani (24/CSE/420)<br>
 <h3 style="color: red;"><b>🧩 Project Overview </b></h3>
 
@@ -10,15 +10,15 @@ It implements multiple Object-Oriented Programming (OOP) principles such as abst
 
 The system allows users to:
 
-Choose movies and show timings
+<ol>Choose movies and show timings
 
-View seat availability by category (Platinum, Gold, Silver)
+<li>View seat availability by category (Platinum, Gold, Silver)</li>
 
-Reserve specific seats
+<li>Reserve specific seats</li>
 
-Persist booking information through text files
+<li>Persist booking information through text files</li>
 
-Each session dynamically reads and writes data to maintain an updated record of reservations.
+<li>Each session dynamically reads and writes data to maintain an updated record of reservations.</li></ol><br>
 
 🧱 System Architecture
 
