@@ -124,7 +124,7 @@ Clean text-based interface using system("cls") and Sleep() for smooth user inter
 
 Users can easily navigate between options, select movies, and view seat arrangements visually (x for reserved, - for available).
 
-<h3 style="color: red;"><b>🧾 Advantages of This Design<hr>
+<h3 style="color: red;"><b>🧾 Advantages of This Design</b></h3><hr>
 Modular and easily extendable for more movies or theatres
 
 Realistic simulation with persistent seat data
