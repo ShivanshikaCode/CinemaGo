@@ -33,55 +33,55 @@ The main() function acts as the controller, managing user interactions and invok
 <h3 style="color: red;"><b>🧠 OOP Concepts Used (12 Concepts)</b></h3><hr>
 Here’s a detailed breakdown of OOP principles applied in this project:
 
-<h4><b><i>1. Class</i></b></h4>
+<h4><b>1. Class</b></h4>
 
 Classes like Seats, PlatinumSeats, GoldSeats, and SilverSeats are used to encapsulate data and behavior related to seat management.
 
-2. Object
+<h4><b>2. Object</b></h4>
 
 Objects such as ps, gs, and ss are created to represent seat categories, enabling real-time seat operations.
 
-3. Encapsulation
+<h4><b>3. Encapsulation</b></h4>
 
 The Seat array (2D matrix) is declared private inside the Seats class to restrict direct access from outside, ensuring data protection and controlled modification through member functions.
 
-4. Abstraction
+<h4><b>4. Abstraction</b></h4>
 
 The system hides complex implementation details like file reading/writing and seat layout logic from the user, exposing only intuitive menu options and methods.
 
-5. Inheritance
+<h4><b>5. Inheritance</b></h4>
 
 The classes PlatinumSeats, GoldSeats, and SilverSeats inherit from the base class Seats, allowing reuse of functions like loadFromFile() and saveToFile() while providing their own version of getSeatStatus().
 
-6. Polymorphism
+<h4><b>6. Polymorphism</b></h4>
 
 Achieved through the virtual function getSeatStatus() and base class pointer Seats* s in main().
 
 Enables runtime polymorphism — the correct version of getSeatStatus() is called depending on the object type (PlatinumSeats, GoldSeats, or SilverSeats).
 
-7. Dynamic Binding
+<h4><b>7. Dynamic Binding</b></h4>
 
 When the base class pointer (Seats* s) calls an overridden method (getSeatStatus()), the function is bound at runtime, demonstrating late binding.
 
-8. Function Overriding
+<h4><b>8. Function Overriding</b></h4>
 
 Each derived class overrides the getSeatStatus() function to provide different seat accessibility logic based on the category.
 
-9. Data Hiding
+<h4><b>9. Data Hiding</b></h4>
 
 The Seat matrix is hidden within the class and can only be accessed or modified using specific public member functions.
 
-10. File Handling (Persistence)
+<h4><b>10. File Handling</b></h4>
 
 Functions loadFromFile() and saveToFile() are used to persist seat booking data across sessions using .txt files.
 
 Demonstrates how OOP integrates with file I/O for real-world applications.
 
-11. Constructor
+<h4><b>11. Constructor</b></h4>
 
 The constructor Seats() initializes all seats as available (1), automatically preparing the layout when an object is created.
 
-12. Use of Pointers and Dynamic Polymorphism
+<h4><b>12. Use of Pointers and Dynamic Polymorphism</b></h4>
 
 The use of a base class pointer (Seats* s) allows the program to decide the appropriate seat category behavior dynamically at runtime.
 
