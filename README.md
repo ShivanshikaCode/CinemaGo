@@ -1,10 +1,9 @@
-🎬<h2><b> Cinema Ticket Booking System</b></h2>
+<h2><b>🎬 Cinema Ticket Booking System</b></h2>
 
 **Language:** C++
-Project Type: Object-Oriented Programming (OOP)
-Author: Your Name
-
-🧩 Project Overview
+**Project Type:** Object-Oriented Programming (OOP)
+**Author:** Shivani (24/CSE/419) and Shivanshika Sahani (24/CSE/420)<br>
+<h4 style="color: #ffb800;">🧩 Project Overview </h4>
 
 The Cinema Ticket Booking System is a console-based application designed to simulate a real-world movie seat reservation process.
 It implements multiple Object-Oriented Programming (OOP) principles such as abstraction, encapsulation, inheritance, polymorphism, dynamic binding, data hiding, and file handling to manage booking data efficiently.
