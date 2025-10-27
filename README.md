@@ -170,7 +170,7 @@ This use of dynamic behavior complements the principles of polymorphism and abst
 
 <h2><b>Implementation Details</b></h2><hr>
 
-Seat Representation: A 2D array (Seat[rows][cols]) represents seat positions.
+**Seat Representation:** A 2D array (Seat[rows][cols]) represents seat positions.
 
 *File Operations*-
 
