@@ -125,27 +125,27 @@ If the file doesn’t exist, it is auto-created during runtime, ensuring smooth 
 <h3 style="color: red;"><b>🖥️ Console Interface</b></h3><hr>
 Clean text-based interface using system("cls") and Sleep() for smooth user interaction.
 
-Users can easily navigate between options, select movies, and view seat arrangements visually (x for reserved, - for available).
+Users can easily navigate between options, select movies, and view seat arrangements visually (x for reserved, - for available).<br>
 
 <h3 style="color: red;"><b>🧾 Advantages of This Design</b></h3><hr>
-Modular and easily extendable for more movies or theatres
+<ul><li>Modular and easily extendable for more movies or theatres</li>
 
-Realistic simulation with persistent seat data
+<li>Realistic simulation with persistent seat data</li>
 
-Demonstrates multiple OOP principles clearly and practically
+<li>Demonstrates multiple OOP principles clearly and practically</li>
 
-Beginner-friendly yet professionally structured
+<li>Beginner-friendly yet professionally structured</li></ul>
 
 <h3 style="color: red;"><b>🚀 Possible Future Enhancements</b></h3><hr>
-Add price differentiation between seat categories
+🔸Add price differentiation between seat categories
 
-Implement customer details and ticket receipts
+🔸Implement customer details and ticket receipts
 
-Add admin panel for seat reset and movie scheduling
+🔸Add admin panel for seat reset and movie scheduling
 
-Replace text files with database integration (MySQL)
+🔸Replace text files with database integration (MySQL)
 
-Build a GUI using Qt or web interface
+🔸Build a GUI using web development<br>
 
 <h3 style="color: red;"><b>🏁 Conclusion</b></h3><hr>
 The Cinema Ticket Booking System successfully demonstrates real-world implementation of core OOP concepts in C++.
