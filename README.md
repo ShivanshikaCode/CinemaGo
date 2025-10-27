@@ -23,8 +23,11 @@ The system allows users to:
 The program is built around a hierarchical class structure, where the base class Seats provides generic functionality for seat management, and three derived classes extend this functionality for specific seat categories.
 
 Seats (Base Class)
+
 🔸 PlatinumSeats (Derived)
+
 🔸 GoldSeats (Derived)
+
 🔸 SilverSeats (Derived)
 
 
