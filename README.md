@@ -3,8 +3,7 @@
 **Language:** C++<br>
 **Project Type:** Object-Oriented Programming (OOP)<br>
 **Author:** Shivani (24/CSE/419) and Shivanshika Sahani (24/CSE/420)<br>
-<h3 style="color: red;"><b>🧩 Project Overview </b></h3>
-
+<h3 style="color: red;"><b>🧩 Project Overview </b></h3><hr>
 The Cinema Ticket Booking System is a console-based application designed to simulate a real-world movie seat reservation process.
 It implements multiple Object-Oriented Programming (OOP) principles such as abstraction, encapsulation, inheritance, polymorphism, dynamic binding, data hiding, and file handling to manage booking data efficiently.
 
@@ -24,10 +23,10 @@ The system allows users to:
 
 The program is built around a hierarchical class structure, where the base class Seats provides generic functionality for seat management, and three derived classes extend this functionality for specific seat categories.
 
-Seats (Base Class)<br><hr>
--> PlatinumSeats (Derived)<hr>
--> GoldSeats (Derived)<hr>
--> SilverSeats (Derived)
+Seats (Base Class)
+🔸 PlatinumSeats (Derived)
+🔸 GoldSeats (Derived)
+🔸 SilverSeats (Derived)
 
 
 The main() function acts as the controller, managing user interactions and invoking appropriate class functions.
