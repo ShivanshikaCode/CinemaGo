@@ -19,8 +19,7 @@ The system allows users to:
 
 <li>Each session dynamically reads and writes data to maintain an updated record of reservations.</li></ul><br>
 
-<h3 style="color: red;"><b>🧱 System Architecture</b></h3>
-
+<h3 style="color: red;"><b>🧱 System Architecture</b></h3><hr>
 The program is built around a hierarchical class structure, where the base class Seats provides generic functionality for seat management, and three derived classes extend this functionality for specific seat categories.
 
 Seats (Base Class)
@@ -31,8 +30,7 @@ Seats (Base Class)
 
 The main() function acts as the controller, managing user interactions and invoking appropriate class functions.
 
-<h3 style="color: red;"><b>🧠 OOP Concepts Used (12 Concepts)</b></h3>
-
+<h3 style="color: red;"><b>🧠 OOP Concepts Used (12 Concepts)</b></h3><hr>
 Here’s a detailed breakdown of OOP principles applied in this project:
 
 1. Class
@@ -87,8 +85,7 @@ The constructor Seats() initializes all seats as available (1), automatically pr
 
 The use of a base class pointer (Seats* s) allows the program to decide the appropriate seat category behavior dynamically at runtime.
 
-<h3 style="color: red;"><b>🧮 Program Flow</b></h3>
-
+<h3 style="color: red;"><b>🧮 Program Flow</b></h3><hr>
 User selects Movie
 
 Chooses Show Timing
@@ -103,8 +100,7 @@ System validates input, checks availability, and reserves seat if available
 
 Updated data is saved in the corresponding .txt file
 
-<h3 style="color: red;"><b>📁 File Handling Logic</b></h3>
-
+<h3 style="color: red;"><b>📁 File Handling Logic</b></h3><hr>
 Each showtime and movie has a dedicated text file (e.g., movie1_1.txt), which stores:
 
 rowNumber seatNumber seatStatus
@@ -116,21 +112,19 @@ rowNumber seatNumber seatStatus
 
 If the file doesn’t exist, it is auto-created during runtime, ensuring smooth operation even on first execution.
 
-<h3 style="color: red;"><b>🧰 Key Functions</b></h3>
+<h3 style="color: red;"><b>🧰 Key Functions</b></h3><hr>
 Function	Purpose
 loadFromFile()	Loads seat data from file into memory
 saveToFile()	Saves current seat layout back to file
 getSeatStatus()	Returns seat availability (overridden in derived classes)
 reserveSeat()	Marks a seat as reserved
 display()	Visually prints the seat arrangement
-<h3 style="color: red;"><b>🖥️ Console Interface</b></h3>
-
+<h3 style="color: red;"><b>🖥️ Console Interface</b></h3><hr>
 Clean text-based interface using system("cls") and Sleep() for smooth user interaction.
 
 Users can easily navigate between options, select movies, and view seat arrangements visually (x for reserved, - for available).
 
-<h3 style="color: red;"><b>🧾 Advantages of This Design
-
+<h3 style="color: red;"><b>🧾 Advantages of This Design<hr>
 Modular and easily extendable for more movies or theatres
 
 Realistic simulation with persistent seat data
@@ -139,8 +133,7 @@ Demonstrates multiple OOP principles clearly and practically
 
 Beginner-friendly yet professionally structured
 
-<h3 style="color: red;"><b>🚀 Possible Future Enhancements</b></h3>
-
+<h3 style="color: red;"><b>🚀 Possible Future Enhancements</b></h3><hr>
 Add price differentiation between seat categories
 
 Implement customer details and ticket receipts
@@ -151,8 +144,7 @@ Replace text files with database integration (MySQL)
 
 Build a GUI using Qt or web interface
 
-<h3 style="color: red;"><b>🏁 Conclusion</b></h3>
-
+<h3 style="color: red;"><b>🏁 Conclusion</b></h3><hr>
 The Cinema Ticket Booking System successfully demonstrates real-world implementation of core OOP concepts in C++.
 It effectively uses inheritance, polymorphism, abstraction, and encapsulation to create a modular, extensible, and maintainable program.
 Through file persistence, it bridges theoretical OOP knowledge with practical application — making it a strong, academic-level project.
