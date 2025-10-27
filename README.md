@@ -33,7 +33,7 @@ The main() function acts as the controller, managing user interactions and invok
 <h3 style="color: red;"><b>🧠 OOP Concepts Used (12 Concepts)</b></h3><hr>
 Here’s a detailed breakdown of OOP principles applied in this project:
 
-1. Class
+<h4 style = "color: red;">1. Class</h4>
 
 Classes like Seats, PlatinumSeats, GoldSeats, and SilverSeats are used to encapsulate data and behavior related to seat management.
 
@@ -147,4 +147,4 @@ Build a GUI using Qt or web interface
 <h3 style="color: red;"><b>🏁 Conclusion</b></h3><hr>
 The Cinema Ticket Booking System successfully demonstrates real-world implementation of core OOP concepts in C++.
 It effectively uses inheritance, polymorphism, abstraction, and encapsulation to create a modular, extensible, and maintainable program.
-Through file persistence, it bridges theoretical OOP knowledge with practical application — making it a strong, academic-level project.
+Through file persistence, it bridges theoretical OOP knowledge with practical application, making it a strong, academic-level project.
