@@ -1,11 +1,11 @@
 <h1><b>🎬 Cinema Ticket Booking System </b></h1>
 <h3><i><b>Project Report</b></i></h3>
-<h3><b>Abstract</b></h3><hr>
+<h2><b>Abstract</b></h2><hr>
 The Cinema Ticket Booking System is a console-based C++ application designed to simulate the process of booking movie tickets. The system allows users to view seat availability, book tickets, and manage reservations efficiently. It demonstrates how object-oriented programming (OOP) concepts can be practically applied to develop a real-world system that involves data handling, modular design, and persistence using file operations.
 
 The goal of this project is to simplify the ticket booking process and to maintain data consistency by reading and writing booking details into a text file, ensuring that the system preserves booking information between sessions.<br>
 
-<h3><b>Objective</b></h3><hr>
+<h2><b>Objective</b></h2><hr>
 
 The main objective of this project is to:
 
@@ -17,7 +17,7 @@ The main objective of this project is to:
 
 <li>Strengthen understanding of core C++ concepts like classes, inheritance, polymorphism, encapsulation, and abstraction.</li></ul><br>
 
-<h3><b>Scope of the Project</b></h3><hr>
+<h2><b>Scope of the Project</b></h2><hr>
 
 This project focuses on a single-screen movie theatre with a fixed seating layout. It is capable of:
 
@@ -31,7 +31,7 @@ This project focuses on a single-screen movie theatre with a fixed seating layou
 
 <li>Although the current version is console-based, the structure is modular and scalable enough to be converted into a GUI-based or web-based booking system in the future.</li></ul><br>
 
-<h3><b>Tools and Technologies Used</b></h3><hr>
+<h2><b>Tools and Technologies Used</b></h2><hr>
 
 **Programming Language:** C++
 
@@ -43,48 +43,48 @@ This project focuses on a single-screen movie theatre with a fixed seating layou
 
 **Key Concepts:** OOP, File Handling, Data Persistence
 
-<h3><b>System Design</b></h3><hr>
-5.1 System Overview
+<h2><b>System Design</b></h2><hr>
+<h3>⚙️ System Overview</h3>
 
 The system is based on a modular design approach:
 
-Seat Management Module: Handles seat initialization, display, and booking updates.
+🔸**Seat Management Module:** Handles seat initialization, display, and booking updates.
 
-File Handling Module: Reads and writes booking data to a text file (movie1_1.txt), ensuring persistence.
+🔸**File Handling Module:** Reads and writes booking data to a text file (movie1_1.txt), ensuring persistence.
 
-Main Control Module: Provides user interaction, displays menus, and manages program flow.
+🔸**Main Control Module:** Provides user interaction, displays menus, and manages program flow.
 
-5.2 Data Flow
+<h3>⚙️ Data Flow</h3>
 
-When the program starts, it reads the current seat data from a file.
+<ul><li>When the program starts, it reads the current seat data from a file.</li>
 
-The user selects seats they want to book.
+<li>The user selects seats they want to book.</li>
 
-The system updates the seat status (0 for available, 1 for booked).
+<li>The system updates the seat status (0 for available, 1 for booked).</li>
 
-Updated data is written back to the text file.
+<li>Updated data is written back to the text file.</li>
 
-The file is reloaded upon next execution — ensuring persistent seat status.
+<li>The file is reloaded upon next execution - ensuring persistent seat status.</li>
 
-6. Features
+<h2><b>Features</b></h2><hr>
 
-Interactive text-based user interface.
+<ul><li>Interactive text-based user interface.</li>
 
-Real-time seat status display.
+<li>Real-time seat status display.</li>
 
-Booking and cancellation functionality.
+<li>Booking and cancellation functionality.</li>
 
-Automatic data persistence through text files.
+<li>Automatic data persistence through text files.</li>
 
-Error handling for invalid inputs.
+<li>Error handling for invalid inputs.</li>
 
-Modular class design for easy code maintenance and extension.
+<li>Modular class design for easy code maintenance and extension.</li></ul>
 
-7. OOP Concepts Implemented
+<h2><b>OOP Concepts Implemented</b></h2><hr>
 
 This project effectively demonstrates several Object-Oriented Programming principles:
 
-Concept	Implementation Description
+Concept  	Implementation Description
 Class & Object	The Seats class encapsulates data and functions related to seat management.
 Encapsulation	Seat data (rows, columns, and seat status) is kept private and accessed via public member functions.
 Abstraction	Users interact only with simplified functions like bookSeat() and displaySeats(), hiding internal details.
