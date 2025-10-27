@@ -1,49 +1,49 @@
 <h1><b>🎬 Cinema Ticket Booking System </b></h1>
 <h3><i><b>Project Report</b></i></h3>
-<h2><b>Abstract</b></h2><hr>
+<h3><b>Abstract</b></h3><hr>
 The Cinema Ticket Booking System is a console-based C++ application designed to simulate the process of booking movie tickets. The system allows users to view seat availability, book tickets, and manage reservations efficiently. It demonstrates how object-oriented programming (OOP) concepts can be practically applied to develop a real-world system that involves data handling, modular design, and persistence using file operations.
 
-The goal of this project is to simplify the ticket booking process and to maintain data consistency by reading and writing booking details into a text file, ensuring that the system preserves booking information between sessions.
+The goal of this project is to simplify the ticket booking process and to maintain data consistency by reading and writing booking details into a text file, ensuring that the system preserves booking information between sessions.<br>
 
-2. Objective
+<h3><b>Objective</b></h3><hr>
 
 The main objective of this project is to:
 
-Implement the principles of Object-Oriented Programming (OOP) in a real-life application.
+<ul><li>Implement the principles of Object-Oriented Programming (OOP) in a real-life application.</li>
 
-Enable users to book, cancel, and view seat reservations through an intuitive console interface.
+<li>Enable users to book, cancel, and view seat reservations through an intuitive console interface.</li>
 
-Use file handling to achieve data persistence, ensuring bookings are not lost after the program terminates.
+<li>Use file handling to achieve data persistence, ensuring bookings are not lost after the program terminates.</li>
 
-Strengthen understanding of core C++ concepts like classes, inheritance, polymorphism, encapsulation, and abstraction.
+<li>Strengthen understanding of core C++ concepts like classes, inheritance, polymorphism, encapsulation, and abstraction.</li></ul><br>
 
-3. Scope of the Project
+<h3><b>Scope of the Project</b></h3><hr>
 
 This project focuses on a single-screen movie theatre with a fixed seating layout. It is capable of:
 
-Displaying seat arrangements and their current status (booked or available).
+<ul><li>Displaying seat arrangements and their current status (booked or available).</li>
 
-Taking user input for booking specific seats.
+<li>Taking user input for booking specific seats.</li>
 
-Saving all booking details to a file for persistent storage.
+<li>Saving all booking details to a file for persistent storage.</li>
 
-Allowing future extension to include multiple movies, timings, and pricing categories.
+<li>Allowing future extension to include multiple movies, timings, and pricing categories.</li>
 
-Although the current version is console-based, the structure is modular and scalable enough to be converted into a GUI-based or web-based booking system in the future.
+<li>Although the current version is console-based, the structure is modular and scalable enough to be converted into a GUI-based or web-based booking system in the future.</li></ul><br>
 
-4. Tools and Technologies Used
+<h3><b>Tools and Technologies Used</b></h3><hr>
 
-Programming Language: C++
+**Programming Language:** C++
 
-Compiler: GCC / MinGW
+**Compiler:** GCC / MinGW
 
-IDE: Visual Studio Code
+**IDE:** Visual Studio Code
 
-Operating System: Windows
+**Operating System:** Windows
 
-Key Concepts: OOP, File Handling, Data Persistence
+**Key Concepts:** OOP, File Handling, Data Persistence
 
-5. System Design
+<h3><b>System Design</b></h3><hr>
 5.1 System Overview
 
 The system is based on a modular design approach:
