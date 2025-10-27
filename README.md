@@ -33,7 +33,7 @@ The main() function acts as the controller, managing user interactions and invok
 <h3 style="color: red;"><b>🧠 OOP Concepts Used (12 Concepts)</b></h3><hr>
 Here’s a detailed breakdown of OOP principles applied in this project:
 
-<h4 style = "color: red;">1. Class</h4>
+<h4 style = "font-style: 'Courier New'"><b>1. Class</b></h4>
 
 Classes like Seats, PlatinumSeats, GoldSeats, and SilverSeats are used to encapsulate data and behavior related to seat management.
 
