@@ -104,7 +104,7 @@ The use of a base class pointer (Seats* s) allows the program to decide the appr
 <li> Updated data is saved in the corresponding .txt file</li></ol>
 
 <h3 style="color: red;"><b>📁 File Handling Logic</b></h3><hr>
-Each showtime and movie has a dedicated text file (e.g., movie1_1.txt), which stores:
+Each showtime and movie has a dedicated text file (e.g., movie1_1.txt for movie choice 1 and its first show of the day), which stores:
 
 rowNumber seatNumber seatStatus
 
