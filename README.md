@@ -60,7 +60,7 @@ The classes PlatinumSeats, GoldSeats, and SilverSeats inherit from the base clas
 
 Achieved through the virtual function getSeatStatus() and base class pointer Seats* s in main().
 
-Enables runtime polymorphism — the correct version of getSeatStatus() is called depending on the object type (PlatinumSeats, GoldSeats, or SilverSeats).
+Enables runtime polymorphism - the correct version of getSeatStatus() is called depending on the object type (PlatinumSeats, GoldSeats, or SilverSeats).
 
 <h4><b>7. Dynamic Binding</b></h4>
 
@@ -86,22 +86,22 @@ The constructor Seats() initializes all seats as available (1), automatically pr
 
 <h4><b>12. Use of Pointers and Dynamic Polymorphism</b></h4>
 
-The use of a base class pointer (Seats* s) allows the program to decide the appropriate seat category behavior dynamically at runtime.
+The use of a base class pointer (Seats* s) allows the program to decide the appropriate seat category behavior dynamically at runtime.<br>
 
 <h3 style="color: red;"><b>🧮 Program Flow</b></h3><hr>
-User selects Movie
+<ol><li>User selects Movie</li>
 
-Chooses Show Timing
+<li> Chooses Show Timing</li>
 
-Picks a Seat Category (Platinum, Gold, Silver)
+<li> Picks a Seat Category (Platinum, Gold, Silver)</li>
 
-Seat layout is displayed
+<li> Seat layout is displayed </li>
 
-User selects a specific Row and Seat Number
+<li> User selects a specific Row and Seat Number</li>
 
-System validates input, checks availability, and reserves seat if available
+<li> System validates input, checks availability, and reserves seat if available</li>
 
-Updated data is saved in the corresponding .txt file
+<li> Updated data is saved in the corresponding .txt file</li></ol>
 
 <h3 style="color: red;"><b>📁 File Handling Logic</b></h3><hr>
 Each showtime and movie has a dedicated text file (e.g., movie1_1.txt), which stores:
