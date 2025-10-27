@@ -116,12 +116,12 @@ rowNumber seatNumber seatStatus
 If the file doesn’t exist, it is auto-created during runtime, ensuring smooth operation even on first execution.
 
 <h3 style="color: red;"><b>🧰 Key Functions</b></h3><hr>
-<b>Function</b>           	Purpose<br>
+<pre><b>Function           	Purpose<br></b>
 <b>loadFromFile()</b>       Loads seat data from file into memory
 <b>saveToFile()</b>	        Saves current seat layout back to file
 <b>getSeatStatus()</b>      Returns seat availability (overridden in derived classes)
 <b>reserveSeat()</b>	      Marks a seat as reserved
-<b>display()</b>	          Visually prints the seat arrangement<br>
+<b>display()</b>	          Visually prints the seat arrangement<br></pre>
 <h3 style="color: red;"><b>🖥️ Console Interface</b></h3><hr>
 Clean text-based interface using system("cls") and Sleep() for smooth user interaction.
 
