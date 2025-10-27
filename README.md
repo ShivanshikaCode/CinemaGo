@@ -10,7 +10,7 @@ It implements multiple Object-Oriented Programming (OOP) principles such as abst
 
 The system allows users to:
 
-<ol>Choose movies and show timings
+<ul ><li>Choose movies and show timings</li>
 
 <li>View seat availability by category (Platinum, Gold, Silver)</li>
 
@@ -18,7 +18,7 @@ The system allows users to:
 
 <li>Persist booking information through text files</li>
 
-<li>Each session dynamically reads and writes data to maintain an updated record of reservations.</li></ol><br>
+<li>Each session dynamically reads and writes data to maintain an updated record of reservations.</li></ul><br>
 
 🧱 System Architecture
 
