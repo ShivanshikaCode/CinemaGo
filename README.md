@@ -1,153 +1,154 @@
-<h1><b>🎬 Cinema Ticket Booking System</b></h1>
+<h1><b>🎬 Cinema Ticket Booking System </b></h1>
+<h3><i><b>Project Report</b></i></h3>
+<h2><b>Abstract</b></h2>
 
-**Language:** C++<br>
-**Project Type:** Object-Oriented Programming (OOP)<br>
-**Author:** Shivani (24/CSE/419) and Shivanshika Sahani (24/CSE/420)<br>
-<h3 style="color: red;"><b>🧩 Project Overview </b></h3><hr>
-The Cinema Ticket Booking System is a console-based application designed to simulate a real-world movie seat reservation process.
-It implements multiple Object-Oriented Programming (OOP) principles such as abstraction, encapsulation, inheritance, polymorphism, dynamic binding, data hiding, and file handling to manage booking data efficiently.
+The Cinema Ticket Booking System is a console-based C++ application designed to simulate the process of booking movie tickets. The system allows users to view seat availability, book tickets, and manage reservations efficiently. It demonstrates how object-oriented programming (OOP) concepts can be practically applied to develop a real-world system that involves data handling, modular design, and persistence using file operations.
 
-The system allows users to:
+The goal of this project is to simplify the ticket booking process and to maintain data consistency by reading and writing booking details into a text file, ensuring that the system preserves booking information between sessions.
 
-<ul ><li>Choose movies and show timings</li>
+2. Objective
 
-<li>View seat availability by category (Platinum, Gold, Silver)</li>
+The main objective of this project is to:
 
-<li>Reserve specific seats</li>
+Implement the principles of Object-Oriented Programming (OOP) in a real-life application.
 
-<li>Persist booking information through text files</li>
+Enable users to book, cancel, and view seat reservations through an intuitive console interface.
 
-<li>Each session dynamically reads and writes data to maintain an updated record of reservations.</li></ul><br>
+Use file handling to achieve data persistence, ensuring bookings are not lost after the program terminates.
 
-<h3 style="color: red;"><b>🧱 System Architecture</b></h3><hr>
-The program is built around a hierarchical class structure, where the base class Seats provides generic functionality for seat management, and three derived classes extend this functionality for specific seat categories.
+Strengthen understanding of core C++ concepts like classes, inheritance, polymorphism, encapsulation, and abstraction.
 
-Seats (Base Class)
+3. Scope of the Project
 
-🔸 PlatinumSeats (Derived)
+This project focuses on a single-screen movie theatre with a fixed seating layout. It is capable of:
 
-🔸 GoldSeats (Derived)
+Displaying seat arrangements and their current status (booked or available).
 
-🔸 SilverSeats (Derived)
+Taking user input for booking specific seats.
 
+Saving all booking details to a file for persistent storage.
 
-The main() function acts as the controller, managing user interactions and invoking appropriate class functions.
+Allowing future extension to include multiple movies, timings, and pricing categories.
 
-<h3 style="color: red;"><b>🧠 OOP Concepts Used (12 Concepts)</b></h3><hr>
-Here’s a detailed breakdown of OOP principles applied in this project:
+Although the current version is console-based, the structure is modular and scalable enough to be converted into a GUI-based or web-based booking system in the future.
 
-<h4><b>1. Class</b></h4>
+4. Tools and Technologies Used
 
-Classes like Seats, PlatinumSeats, GoldSeats, and SilverSeats are used to encapsulate data and behavior related to seat management.
+Programming Language: C++
 
-<h4><b>2. Object</b></h4>
+Compiler: GCC / MinGW
 
-Objects such as ps, gs, and ss are created to represent seat categories, enabling real-time seat operations.
+IDE: Visual Studio Code
 
-<h4><b>3. Encapsulation</b></h4>
+Operating System: Windows
 
-The Seat array (2D matrix) is declared private inside the Seats class to restrict direct access from outside, ensuring data protection and controlled modification through member functions.
+Key Concepts: OOP, File Handling, Data Persistence
 
-<h4><b>4. Abstraction</b></h4>
+5. System Design
+5.1 System Overview
 
-The system hides complex implementation details like file reading/writing and seat layout logic from the user, exposing only intuitive menu options and methods.
+The system is based on a modular design approach:
 
-<h4><b>5. Inheritance</b></h4>
+Seat Management Module: Handles seat initialization, display, and booking updates.
 
-The classes PlatinumSeats, GoldSeats, and SilverSeats inherit from the base class Seats, allowing reuse of functions like loadFromFile() and saveToFile() while providing their own version of getSeatStatus().
+File Handling Module: Reads and writes booking data to a text file (movie1_1.txt), ensuring persistence.
 
-<h4><b>6. Polymorphism</b></h4>
+Main Control Module: Provides user interaction, displays menus, and manages program flow.
 
-Achieved through the virtual function getSeatStatus() and base class pointer Seats* s in main().
+5.2 Data Flow
 
-Enables runtime polymorphism - the correct version of getSeatStatus() is called depending on the object type (PlatinumSeats, GoldSeats, or SilverSeats).
+When the program starts, it reads the current seat data from a file.
 
-<h4><b>7. Dynamic Binding</b></h4>
+The user selects seats they want to book.
 
-When the base class pointer (Seats* s) calls an overridden method (getSeatStatus()), the function is bound at runtime, demonstrating late binding.
+The system updates the seat status (0 for available, 1 for booked).
 
-<h4><b>8. Function Overriding</b></h4>
+Updated data is written back to the text file.
 
-Each derived class overrides the getSeatStatus() function to provide different seat accessibility logic based on the category.
+The file is reloaded upon next execution — ensuring persistent seat status.
 
-<h4><b>9. Data Hiding</b></h4>
+6. Features
 
-The Seat matrix is hidden within the class and can only be accessed or modified using specific public member functions.
+Interactive text-based user interface.
 
-<h4><b>10. File Handling</b></h4>
+Real-time seat status display.
 
-Functions loadFromFile() and saveToFile() are used to persist seat booking data across sessions using .txt files.
+Booking and cancellation functionality.
 
-Demonstrates how OOP integrates with file I/O for real-world applications.
+Automatic data persistence through text files.
 
-<h4><b>11. Constructor</b></h4>
+Error handling for invalid inputs.
 
-The constructor Seats() initializes all seats as available (1), automatically preparing the layout when an object is created.
+Modular class design for easy code maintenance and extension.
 
-<h4><b>12. Use of Pointers and Dynamic Polymorphism</b></h4>
+7. OOP Concepts Implemented
 
-The use of a base class pointer (Seats* s) allows the program to decide the appropriate seat category behavior dynamically at runtime.<br>
+This project effectively demonstrates several Object-Oriented Programming principles:
 
-<h3 style="color: red;"><b>🧮 Program Flow</b></h3><hr>
-<ol><li>User selects Movie</li>
+Concept	Implementation Description
+Class & Object	The Seats class encapsulates data and functions related to seat management.
+Encapsulation	Seat data (rows, columns, and seat status) is kept private and accessed via public member functions.
+Abstraction	Users interact only with simplified functions like bookSeat() and displaySeats(), hiding internal details.
+Inheritance	Different seat types (like Platinum, Gold, Silver) can be derived from a base class for future scalability.
+Polymorphism	Virtual functions can be used for displaying seat information differently in derived classes.
+Constructor & Destructor	Constructors initialize seat data; destructors ensure cleanup when objects go out of scope.
+File Handling (Persistence)	Data is saved and retrieved using file I/O to preserve booking details between sessions.
+Function Overloading / Overriding	Methods can be redefined for specific seat categories.
+Dynamic Binding	Achieved when virtual functions are called through base class pointers.
+8. Implementation Details
 
-<li> Chooses Show Timing</li>
+Seat Representation: A 2D array (Seat[rows][cols]) represents seat positions.
 
-<li> Picks a Seat Category (Platinum, Gold, Silver)</li>
+File Operations:
 
-<li> Seat layout is displayed </li>
+Input: Load seat data from movie1_1.txt.
 
-<li> User selects a specific Row and Seat Number</li>
+Output: Update file after each booking.
 
-<li> System validates input, checks availability, and reserves seat if available</li>
+Menu System: Allows users to view and book seats interactively.
 
-<li> Updated data is saved in the corresponding .txt file</li></ol>
+Error Control: Prevents double booking and invalid seat selections.
 
-<h3 style="color: red;"><b>📁 File Handling Logic</b></h3><hr>
-Each showtime and movie has a dedicated text file (e.g., movie1_1.txt for movie choice 1 and its first show of the day), which stores:
+9. Sample Output
+Welcome to Cinema Ticket Booking System
 
-rowNumber seatNumber seatStatus
+1. View Seats
+2. Book a Seat
+3. Exit
 
+Enter your choice: 1
 
-1 → Seat available
+Current Seat Status:
+O - Available   X - Booked
 
-0 → Seat reserved
+Row 1: O O X O O O O O X O
+Row 2: X O O O X O O X O O
 
-If the file doesn’t exist, it is auto-created during runtime, ensuring smooth operation even on first execution.
+10. Conclusion
 
-<h3 style="color: red;"><b>🧰 Key Functions</b></h3><hr>
-<pre><b>Function           	Purpose<br></b>
-<b>loadFromFile()</b>      Loads seat data from file into memory
-<b>saveToFile()</b>	    Saves current seat layout back to file
-<b>getSeatStatus()</b>     Returns seat availability (overridden in derived classes)
-<b>reserveSeat()</b>	    Marks a seat as reserved
-<b>display()</b>	        Visually prints the seat arrangement<br></pre>
-<h3 style="color: red;"><b>🖥️ Console Interface</b></h3><hr>
-Clean text-based interface using system("cls") and Sleep() for smooth user interaction.
+The Cinema Ticket Booking System demonstrates how Object-Oriented Programming can be applied to solve real-world problems through modular, scalable, and maintainable code.
+The project successfully integrates file handling for persistence, reinforcing practical concepts of data storage and retrieval.
 
-Users can easily navigate between options, select movies, and view seat arrangements visually (x for reserved, - for available).<br>
+It not only enhances understanding of C++ OOP principles but also provides a solid foundation for extending the system to a multi-screen, multi-user, or GUI-based version.
 
-<h3 style="color: red;"><b>🧾 Advantages of This Design</b></h3><hr>
-<ul><li>Modular and easily extendable for more movies or theatres</li>
+11. Future Enhancements
 
-<li>Realistic simulation with persistent seat data</li>
+Add user authentication (admin and customer).
 
-<li>Demonstrates multiple OOP principles clearly and practically</li>
+Include multiple movies and showtimes.
 
-<li>Beginner-friendly yet professionally structured</li></ul>
+Implement price calculation and digital receipts.
 
-<h3 style="color: red;"><b>🚀 Possible Future Enhancements</b></h3><hr>
-🔸Add price differentiation between seat categories
+Develop a graphical or web interface for better usability.
 
-🔸Implement customer details and ticket receipts
+12. References
 
-🔸Add admin panel for seat reset and movie scheduling
+E. Balagurusamy — Object-Oriented Programming with C++
 
-🔸Replace text files with database integration (MySQL)
+cppreference.com
 
-🔸Build a GUI using web development<br>
+GeeksforGeeks C++ Tutorials
 
-<h3 style="color: red;"><b>🏁 Conclusion</b></h3><hr>
-The Cinema Ticket Booking System successfully demonstrates real-world implementation of core OOP concepts in C++.
-It effectively uses inheritance, polymorphism, abstraction, and encapsulation to create a modular, extensible, and maintainable program.
-Through file persistence, it bridges theoretical OOP knowledge with practical application, making it a strong, academic-level project.
+cplusplus.com Documentation
+
+Would you like me to now format this version with professional Markdown + some minimal CSS-style HTML (fonts, color headings) so you can paste it directly into your GitHub README.md and it looks visually appealing too?
