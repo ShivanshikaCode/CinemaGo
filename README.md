@@ -1,7 +1,6 @@
 <h1><b>🎬 Cinema Ticket Booking System </b></h1>
 <h3><i><b>Project Report</b></i></h3>
-<h2><b>Abstract</b></h2>
-
+<h2><b>Abstract</b></h2><hr>
 The Cinema Ticket Booking System is a console-based C++ application designed to simulate the process of booking movie tickets. The system allows users to view seat availability, book tickets, and manage reservations efficiently. It demonstrates how object-oriented programming (OOP) concepts can be practically applied to develop a real-world system that involves data handling, modular design, and persistence using file operations.
 
 The goal of this project is to simplify the ticket booking process and to maintain data consistency by reading and writing booking details into a text file, ensuring that the system preserves booking information between sessions.
